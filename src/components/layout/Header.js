@@ -3,6 +3,17 @@
  * Header Component
  */
 const Header = () => {
+
+  /** Show/Hide the Sidebar */
+  const toggleSidebar=()=>{
+      var body=document.getElementsByTagName('body');
+      var list=body[0].classList;
+      if(list.contains('toggle-sidebar')){
+        list.remove('toggle-sidebar')
+      }else{
+        list.add('toggle-sidebar')
+      }
+  }
     return (
      <>
      <header id="header" className="header fixed-top d-flex align-items-center">
@@ -12,7 +23,7 @@ const Header = () => {
     {/* <img src="assets/img/logo.png" alt="" /> */}
     <span className="d-none d-lg-block">Admin</span>
   </a>
-  <i className="bi bi-list toggle-sidebar-btn"></i>
+  <i onClick={toggleSidebar} className="bi bi-list toggle-sidebar-btn"></i>
 </div>
 
 <nav className="header-nav ms-auto">

@@ -1,11 +1,13 @@
-import { Login,Dashboard,Layout } from '../pages';
+import { Login,Dashboard,Layout,Product,Category } from '../pages';
 import { Routes,Route, } from 'react-router-dom';
 
 const routes=[
     {path: '' ,component: <Login />},
     {path: 'login' ,component: <Login />},
     {path: '*' ,component: <Login />},
-    {path: 'admin' , child:'dashboard' ,component: <Dashboard />}
+    {path: 'admin' , child:'dashboard' ,component: <Dashboard />},
+    {path: 'admin' , child:'category' ,component: <Category />},
+    {path: 'admin' , child:'product' ,component: <Product />}
 ]
 
 const AdminRoutes = () => {

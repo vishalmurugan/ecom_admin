@@ -542,7 +542,7 @@
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    color: #4154f1;
+    color: #012970;
     transition: 0.3;
     background: #f6f9ff;
     padding: 10px 15px;
@@ -552,7 +552,7 @@
   .sidebar-nav .nav-link i {
     font-size: 16px;
     margin-right: 10px;
-    color: #4154f1;
+    color: #012970;
   }
   
   .sidebar-nav .nav-link.collapsed {
@@ -564,13 +564,13 @@
     color: #899bbd;
   }
   
-  .sidebar-nav .nav-link:hover {
-    color: #4154f1;
-    background: #f6f9ff;
+  .sidebar-nav .nav-link:hover,.sidebar-nav .active {
+    background: #4644c2;
+    color: white;
   }
   
-  .sidebar-nav .nav-link:hover i {
-    color: #4154f1;
+  .sidebar-nav .nav-link:hover i,.sidebar-nav .active i {
+    color: white;
   }
   
   .sidebar-nav .nav-link .bi-chevron-down {
